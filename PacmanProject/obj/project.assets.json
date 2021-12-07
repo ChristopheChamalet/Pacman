@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abder\\OneDrive\\Documents\\cours_CFA_INSTA\\3eme année\\courCsharp\\PacmanProject\\PacmanProject\\PacmanProject.csproj",
+      "projectUniqueName": "C:\\Users\\abder\\Desktop\\PacmanProject\\PacmanProject\\PacmanProject.csproj",
       "projectName": "PacmanProject",
-      "projectPath": "C:\\Users\\abder\\OneDrive\\Documents\\cours_CFA_INSTA\\3eme année\\courCsharp\\PacmanProject\\PacmanProject\\PacmanProject.csproj",
+      "projectPath": "C:\\Users\\abder\\Desktop\\PacmanProject\\PacmanProject\\PacmanProject.csproj",
       "packagesPath": "C:\\Users\\abder\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abder\\OneDrive\\Documents\\cours_CFA_INSTA\\3eme année\\courCsharp\\PacmanProject\\PacmanProject\\obj\\",
+      "outputPath": "C:\\Users\\abder\\Desktop\\PacmanProject\\PacmanProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\abder\\AppData\\Roaming\\NuGet\\NuGet.Config",

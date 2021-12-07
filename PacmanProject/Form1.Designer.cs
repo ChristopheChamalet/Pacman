@@ -30,7 +30,7 @@ namespace PacmanProject
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtScore = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -50,7 +50,7 @@ namespace PacmanProject
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pacman = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
@@ -202,7 +202,7 @@ namespace PacmanProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pacman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
@@ -336,17 +336,17 @@ namespace PacmanProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox151)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // txtScore
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(600, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Score : 0";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.txtScore.AutoSize = true;
+            this.txtScore.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtScore.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtScore.Location = new System.Drawing.Point(600, 9);
+            this.txtScore.Name = "txtScore";
+            this.txtScore.Size = new System.Drawing.Size(92, 30);
+            this.txtScore.TabIndex = 0;
+            this.txtScore.Text = "Score : 0";
+            this.txtScore.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -542,16 +542,16 @@ namespace PacmanProject
             this.pictureBox16.TabStop = false;
             this.pictureBox16.Tag = "wall";
             // 
-            // pictureBox17
+            // pacman
             // 
-            this.pictureBox17.Image = global::PacmanProject.Properties.Resources.right;
-            this.pictureBox17.Location = new System.Drawing.Point(940, 340);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 20;
-            this.pictureBox17.TabStop = false;
-            this.pictureBox17.Click += new System.EventHandler(this.pictureBox17_Click);
+            this.pacman.Image = global::PacmanProject.Properties.Resources.right;
+            this.pacman.Location = new System.Drawing.Point(940, 340);
+            this.pacman.Name = "pacman";
+            this.pacman.Size = new System.Drawing.Size(40, 40);
+            this.pacman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pacman.TabIndex = 20;
+            this.pacman.TabStop = false;
+            this.pacman.Click += new System.EventHandler(this.pictureBox17_Click);
             // 
             // pictureBox18
             // 
@@ -904,6 +904,8 @@ namespace PacmanProject
             this.pictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox47.TabIndex = 59;
             this.pictureBox47.TabStop = false;
+            this.pictureBox47.Tag = "coin";
+            this.pictureBox47.Click += new System.EventHandler(this.pictureBox47_Click);
             // 
             // pictureBox53
             // 
@@ -914,6 +916,8 @@ namespace PacmanProject
             this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox53.TabIndex = 60;
             this.pictureBox53.TabStop = false;
+            this.pictureBox53.Tag = "coin";
+            this.pictureBox53.Click += new System.EventHandler(this.pictureBox53_Click);
             // 
             // pictureBox54
             // 
@@ -924,6 +928,7 @@ namespace PacmanProject
             this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox54.TabIndex = 61;
             this.pictureBox54.TabStop = false;
+            this.pictureBox54.Tag = "coin";
             // 
             // pictureBox55
             // 
@@ -934,6 +939,7 @@ namespace PacmanProject
             this.pictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox55.TabIndex = 62;
             this.pictureBox55.TabStop = false;
+            this.pictureBox55.Tag = "coin";
             // 
             // pictureBox56
             // 
@@ -944,6 +950,8 @@ namespace PacmanProject
             this.pictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox56.TabIndex = 66;
             this.pictureBox56.TabStop = false;
+            this.pictureBox56.Tag = "coin";
+            this.pictureBox56.Click += new System.EventHandler(this.pictureBox56_Click);
             // 
             // pictureBox57
             // 
@@ -954,6 +962,8 @@ namespace PacmanProject
             this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox57.TabIndex = 65;
             this.pictureBox57.TabStop = false;
+            this.pictureBox57.Tag = "coin";
+            this.pictureBox57.Click += new System.EventHandler(this.pictureBox57_Click);
             // 
             // pictureBox58
             // 
@@ -964,6 +974,8 @@ namespace PacmanProject
             this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox58.TabIndex = 64;
             this.pictureBox58.TabStop = false;
+            this.pictureBox58.Tag = "coin";
+            this.pictureBox58.Click += new System.EventHandler(this.pictureBox58_Click);
             // 
             // pictureBox59
             // 
@@ -974,6 +986,8 @@ namespace PacmanProject
             this.pictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox59.TabIndex = 63;
             this.pictureBox59.TabStop = false;
+            this.pictureBox59.Tag = "coin";
+            this.pictureBox59.Click += new System.EventHandler(this.pictureBox59_Click);
             // 
             // pictureBox60
             // 
@@ -984,6 +998,8 @@ namespace PacmanProject
             this.pictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox60.TabIndex = 70;
             this.pictureBox60.TabStop = false;
+            this.pictureBox60.Tag = "coin";
+            this.pictureBox60.Click += new System.EventHandler(this.pictureBox60_Click);
             // 
             // pictureBox61
             // 
@@ -994,6 +1010,8 @@ namespace PacmanProject
             this.pictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox61.TabIndex = 69;
             this.pictureBox61.TabStop = false;
+            this.pictureBox61.Tag = "coin";
+            this.pictureBox61.Click += new System.EventHandler(this.pictureBox61_Click);
             // 
             // pictureBox62
             // 
@@ -1004,6 +1022,8 @@ namespace PacmanProject
             this.pictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox62.TabIndex = 68;
             this.pictureBox62.TabStop = false;
+            this.pictureBox62.Tag = "coin";
+            this.pictureBox62.Click += new System.EventHandler(this.pictureBox62_Click);
             // 
             // pictureBox63
             // 
@@ -1014,6 +1034,8 @@ namespace PacmanProject
             this.pictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox63.TabIndex = 67;
             this.pictureBox63.TabStop = false;
+            this.pictureBox63.Tag = "coin";
+            this.pictureBox63.Click += new System.EventHandler(this.pictureBox63_Click);
             // 
             // pictureBox64
             // 
@@ -1024,6 +1046,8 @@ namespace PacmanProject
             this.pictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox64.TabIndex = 74;
             this.pictureBox64.TabStop = false;
+            this.pictureBox64.Tag = "coin";
+            this.pictureBox64.Click += new System.EventHandler(this.pictureBox64_Click);
             // 
             // pictureBox65
             // 
@@ -1034,6 +1058,8 @@ namespace PacmanProject
             this.pictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox65.TabIndex = 73;
             this.pictureBox65.TabStop = false;
+            this.pictureBox65.Tag = "coin";
+            this.pictureBox65.Click += new System.EventHandler(this.pictureBox65_Click);
             // 
             // pictureBox66
             // 
@@ -1044,6 +1070,8 @@ namespace PacmanProject
             this.pictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox66.TabIndex = 72;
             this.pictureBox66.TabStop = false;
+            this.pictureBox66.Tag = "coin";
+            this.pictureBox66.Click += new System.EventHandler(this.pictureBox66_Click);
             // 
             // pictureBox67
             // 
@@ -1054,6 +1082,8 @@ namespace PacmanProject
             this.pictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox67.TabIndex = 71;
             this.pictureBox67.TabStop = false;
+            this.pictureBox67.Tag = "coin";
+            this.pictureBox67.Click += new System.EventHandler(this.pictureBox67_Click);
             // 
             // pictureBox68
             // 
@@ -1064,6 +1094,8 @@ namespace PacmanProject
             this.pictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox68.TabIndex = 78;
             this.pictureBox68.TabStop = false;
+            this.pictureBox68.Tag = "coin";
+            this.pictureBox68.Click += new System.EventHandler(this.pictureBox68_Click);
             // 
             // pictureBox69
             // 
@@ -1074,6 +1106,8 @@ namespace PacmanProject
             this.pictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox69.TabIndex = 77;
             this.pictureBox69.TabStop = false;
+            this.pictureBox69.Tag = "coin";
+            this.pictureBox69.Click += new System.EventHandler(this.pictureBox69_Click);
             // 
             // pictureBox70
             // 
@@ -1084,6 +1118,8 @@ namespace PacmanProject
             this.pictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox70.TabIndex = 76;
             this.pictureBox70.TabStop = false;
+            this.pictureBox70.Tag = "coin";
+            this.pictureBox70.Click += new System.EventHandler(this.pictureBox70_Click);
             // 
             // pictureBox71
             // 
@@ -1094,6 +1130,8 @@ namespace PacmanProject
             this.pictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox71.TabIndex = 75;
             this.pictureBox71.TabStop = false;
+            this.pictureBox71.Tag = "coin";
+            this.pictureBox71.Click += new System.EventHandler(this.pictureBox71_Click);
             // 
             // pictureBox73
             // 
@@ -1104,6 +1142,8 @@ namespace PacmanProject
             this.pictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox73.TabIndex = 81;
             this.pictureBox73.TabStop = false;
+            this.pictureBox73.Tag = "coin";
+            this.pictureBox73.Click += new System.EventHandler(this.pictureBox73_Click);
             // 
             // pictureBox74
             // 
@@ -1114,6 +1154,8 @@ namespace PacmanProject
             this.pictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox74.TabIndex = 80;
             this.pictureBox74.TabStop = false;
+            this.pictureBox74.Tag = "coin";
+            this.pictureBox74.Click += new System.EventHandler(this.pictureBox74_Click);
             // 
             // pictureBox75
             // 
@@ -1124,6 +1166,8 @@ namespace PacmanProject
             this.pictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox75.TabIndex = 79;
             this.pictureBox75.TabStop = false;
+            this.pictureBox75.Tag = "coin";
+            this.pictureBox75.Click += new System.EventHandler(this.pictureBox75_Click);
             // 
             // pictureBox77
             // 
@@ -1134,6 +1178,8 @@ namespace PacmanProject
             this.pictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox77.TabIndex = 85;
             this.pictureBox77.TabStop = false;
+            this.pictureBox77.Tag = "coin";
+            this.pictureBox77.Click += new System.EventHandler(this.pictureBox77_Click);
             // 
             // pictureBox78
             // 
@@ -1144,6 +1190,8 @@ namespace PacmanProject
             this.pictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox78.TabIndex = 84;
             this.pictureBox78.TabStop = false;
+            this.pictureBox78.Tag = "coin";
+            this.pictureBox78.Click += new System.EventHandler(this.pictureBox78_Click);
             // 
             // pictureBox79
             // 
@@ -1154,6 +1202,8 @@ namespace PacmanProject
             this.pictureBox79.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox79.TabIndex = 83;
             this.pictureBox79.TabStop = false;
+            this.pictureBox79.Tag = "coin";
+            this.pictureBox79.Click += new System.EventHandler(this.pictureBox79_Click);
             // 
             // pictureBox80
             // 
@@ -1164,6 +1214,7 @@ namespace PacmanProject
             this.pictureBox80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox80.TabIndex = 90;
             this.pictureBox80.TabStop = false;
+            this.pictureBox80.Tag = "coin";
             // 
             // pictureBox81
             // 
@@ -1174,6 +1225,7 @@ namespace PacmanProject
             this.pictureBox81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox81.TabIndex = 89;
             this.pictureBox81.TabStop = false;
+            this.pictureBox81.Tag = "coin";
             // 
             // pictureBox82
             // 
@@ -1184,6 +1236,7 @@ namespace PacmanProject
             this.pictureBox82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox82.TabIndex = 88;
             this.pictureBox82.TabStop = false;
+            this.pictureBox82.Tag = "coin";
             // 
             // pictureBox83
             // 
@@ -1194,6 +1247,7 @@ namespace PacmanProject
             this.pictureBox83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox83.TabIndex = 87;
             this.pictureBox83.TabStop = false;
+            this.pictureBox83.Tag = "coin";
             // 
             // pictureBox84
             // 
@@ -1204,6 +1258,7 @@ namespace PacmanProject
             this.pictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox84.TabIndex = 94;
             this.pictureBox84.TabStop = false;
+            this.pictureBox84.Tag = "coin";
             // 
             // pictureBox85
             // 
@@ -1214,6 +1269,7 @@ namespace PacmanProject
             this.pictureBox85.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox85.TabIndex = 93;
             this.pictureBox85.TabStop = false;
+            this.pictureBox85.Tag = "coin";
             // 
             // pictureBox86
             // 
@@ -1224,6 +1280,7 @@ namespace PacmanProject
             this.pictureBox86.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox86.TabIndex = 92;
             this.pictureBox86.TabStop = false;
+            this.pictureBox86.Tag = "coin";
             // 
             // pictureBox87
             // 
@@ -1234,6 +1291,7 @@ namespace PacmanProject
             this.pictureBox87.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox87.TabIndex = 91;
             this.pictureBox87.TabStop = false;
+            this.pictureBox87.Tag = "coin";
             // 
             // pictureBox88
             // 
@@ -1244,6 +1302,7 @@ namespace PacmanProject
             this.pictureBox88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox88.TabIndex = 98;
             this.pictureBox88.TabStop = false;
+            this.pictureBox88.Tag = "coin";
             // 
             // pictureBox89
             // 
@@ -1254,6 +1313,7 @@ namespace PacmanProject
             this.pictureBox89.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox89.TabIndex = 97;
             this.pictureBox89.TabStop = false;
+            this.pictureBox89.Tag = "coin";
             // 
             // pictureBox90
             // 
@@ -1264,6 +1324,7 @@ namespace PacmanProject
             this.pictureBox90.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox90.TabIndex = 96;
             this.pictureBox90.TabStop = false;
+            this.pictureBox90.Tag = "coin";
             // 
             // pictureBox91
             // 
@@ -1274,6 +1335,7 @@ namespace PacmanProject
             this.pictureBox91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox91.TabIndex = 95;
             this.pictureBox91.TabStop = false;
+            this.pictureBox91.Tag = "coin";
             // 
             // pictureBox92
             // 
@@ -1284,6 +1346,7 @@ namespace PacmanProject
             this.pictureBox92.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox92.TabIndex = 102;
             this.pictureBox92.TabStop = false;
+            this.pictureBox92.Tag = "coin";
             // 
             // pictureBox93
             // 
@@ -1294,6 +1357,7 @@ namespace PacmanProject
             this.pictureBox93.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox93.TabIndex = 101;
             this.pictureBox93.TabStop = false;
+            this.pictureBox93.Tag = "coin";
             // 
             // pictureBox94
             // 
@@ -1304,6 +1368,7 @@ namespace PacmanProject
             this.pictureBox94.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox94.TabIndex = 100;
             this.pictureBox94.TabStop = false;
+            this.pictureBox94.Tag = "coin";
             // 
             // pictureBox95
             // 
@@ -1314,6 +1379,7 @@ namespace PacmanProject
             this.pictureBox95.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox95.TabIndex = 99;
             this.pictureBox95.TabStop = false;
+            this.pictureBox95.Tag = "coin";
             // 
             // pictureBox96
             // 
@@ -1324,6 +1390,7 @@ namespace PacmanProject
             this.pictureBox96.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox96.TabIndex = 106;
             this.pictureBox96.TabStop = false;
+            this.pictureBox96.Tag = "coin";
             // 
             // pictureBox97
             // 
@@ -1334,6 +1401,7 @@ namespace PacmanProject
             this.pictureBox97.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox97.TabIndex = 105;
             this.pictureBox97.TabStop = false;
+            this.pictureBox97.Tag = "coin";
             // 
             // pictureBox98
             // 
@@ -1344,6 +1412,7 @@ namespace PacmanProject
             this.pictureBox98.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox98.TabIndex = 104;
             this.pictureBox98.TabStop = false;
+            this.pictureBox98.Tag = "coin";
             // 
             // pictureBox99
             // 
@@ -1354,6 +1423,7 @@ namespace PacmanProject
             this.pictureBox99.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox99.TabIndex = 103;
             this.pictureBox99.TabStop = false;
+            this.pictureBox99.Tag = "coin";
             // 
             // pictureBox100
             // 
@@ -1364,6 +1434,7 @@ namespace PacmanProject
             this.pictureBox100.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox100.TabIndex = 110;
             this.pictureBox100.TabStop = false;
+            this.pictureBox100.Tag = "coin";
             // 
             // pictureBox101
             // 
@@ -1374,6 +1445,7 @@ namespace PacmanProject
             this.pictureBox101.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox101.TabIndex = 109;
             this.pictureBox101.TabStop = false;
+            this.pictureBox101.Tag = "coin";
             // 
             // pictureBox102
             // 
@@ -1384,6 +1456,7 @@ namespace PacmanProject
             this.pictureBox102.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox102.TabIndex = 108;
             this.pictureBox102.TabStop = false;
+            this.pictureBox102.Tag = "coin";
             // 
             // pictureBox103
             // 
@@ -1394,6 +1467,7 @@ namespace PacmanProject
             this.pictureBox103.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox103.TabIndex = 107;
             this.pictureBox103.TabStop = false;
+            this.pictureBox103.Tag = "coin";
             // 
             // pictureBox104
             // 
@@ -1404,6 +1478,7 @@ namespace PacmanProject
             this.pictureBox104.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox104.TabIndex = 114;
             this.pictureBox104.TabStop = false;
+            this.pictureBox104.Tag = "coin";
             // 
             // pictureBox106
             // 
@@ -1414,6 +1489,7 @@ namespace PacmanProject
             this.pictureBox106.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox106.TabIndex = 112;
             this.pictureBox106.TabStop = false;
+            this.pictureBox106.Tag = "coin";
             // 
             // pictureBox107
             // 
@@ -1424,6 +1500,7 @@ namespace PacmanProject
             this.pictureBox107.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox107.TabIndex = 111;
             this.pictureBox107.TabStop = false;
+            this.pictureBox107.Tag = "coin";
             // 
             // pictureBox108
             // 
@@ -1434,6 +1511,8 @@ namespace PacmanProject
             this.pictureBox108.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox108.TabIndex = 118;
             this.pictureBox108.TabStop = false;
+            this.pictureBox108.Tag = "coin";
+            this.pictureBox108.Click += new System.EventHandler(this.pictureBox108_Click);
             // 
             // pictureBox109
             // 
@@ -1444,6 +1523,8 @@ namespace PacmanProject
             this.pictureBox109.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox109.TabIndex = 117;
             this.pictureBox109.TabStop = false;
+            this.pictureBox109.Tag = "coin";
+            this.pictureBox109.Click += new System.EventHandler(this.pictureBox109_Click);
             // 
             // pictureBox110
             // 
@@ -1454,6 +1535,8 @@ namespace PacmanProject
             this.pictureBox110.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox110.TabIndex = 116;
             this.pictureBox110.TabStop = false;
+            this.pictureBox110.Tag = "coin";
+            this.pictureBox110.Click += new System.EventHandler(this.pictureBox110_Click);
             // 
             // pictureBox111
             // 
@@ -1464,6 +1547,8 @@ namespace PacmanProject
             this.pictureBox111.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox111.TabIndex = 115;
             this.pictureBox111.TabStop = false;
+            this.pictureBox111.Tag = "coin";
+            this.pictureBox111.Click += new System.EventHandler(this.pictureBox111_Click);
             // 
             // pictureBox112
             // 
@@ -1474,6 +1559,7 @@ namespace PacmanProject
             this.pictureBox112.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox112.TabIndex = 120;
             this.pictureBox112.TabStop = false;
+            this.pictureBox112.Tag = "coin";
             // 
             // pictureBox113
             // 
@@ -1484,6 +1570,7 @@ namespace PacmanProject
             this.pictureBox113.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox113.TabIndex = 119;
             this.pictureBox113.TabStop = false;
+            this.pictureBox113.Tag = "coin";
             // 
             // pictureBox114
             // 
@@ -1494,6 +1581,7 @@ namespace PacmanProject
             this.pictureBox114.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox114.TabIndex = 122;
             this.pictureBox114.TabStop = false;
+            this.pictureBox114.Tag = "coin";
             // 
             // pictureBox115
             // 
@@ -1504,6 +1592,7 @@ namespace PacmanProject
             this.pictureBox115.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox115.TabIndex = 121;
             this.pictureBox115.TabStop = false;
+            this.pictureBox115.Tag = "coin";
             // 
             // pictureBox116
             // 
@@ -1514,6 +1603,7 @@ namespace PacmanProject
             this.pictureBox116.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox116.TabIndex = 124;
             this.pictureBox116.TabStop = false;
+            this.pictureBox116.Tag = "coin";
             // 
             // pictureBox117
             // 
@@ -1524,6 +1614,7 @@ namespace PacmanProject
             this.pictureBox117.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox117.TabIndex = 123;
             this.pictureBox117.TabStop = false;
+            this.pictureBox117.Tag = "coin";
             // 
             // pictureBox118
             // 
@@ -1534,6 +1625,7 @@ namespace PacmanProject
             this.pictureBox118.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox118.TabIndex = 126;
             this.pictureBox118.TabStop = false;
+            this.pictureBox118.Tag = "coin";
             // 
             // pictureBox119
             // 
@@ -1544,6 +1636,7 @@ namespace PacmanProject
             this.pictureBox119.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox119.TabIndex = 125;
             this.pictureBox119.TabStop = false;
+            this.pictureBox119.Tag = "coin";
             // 
             // pictureBox120
             // 
@@ -1554,6 +1647,7 @@ namespace PacmanProject
             this.pictureBox120.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox120.TabIndex = 128;
             this.pictureBox120.TabStop = false;
+            this.pictureBox120.Tag = "coin";
             // 
             // pictureBox121
             // 
@@ -1564,6 +1658,7 @@ namespace PacmanProject
             this.pictureBox121.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox121.TabIndex = 127;
             this.pictureBox121.TabStop = false;
+            this.pictureBox121.Tag = "coin";
             // 
             // pictureBox122
             // 
@@ -1574,6 +1669,7 @@ namespace PacmanProject
             this.pictureBox122.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox122.TabIndex = 130;
             this.pictureBox122.TabStop = false;
+            this.pictureBox122.Tag = "coin";
             // 
             // pictureBox123
             // 
@@ -1584,6 +1680,7 @@ namespace PacmanProject
             this.pictureBox123.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox123.TabIndex = 129;
             this.pictureBox123.TabStop = false;
+            this.pictureBox123.Tag = "coin";
             // 
             // pictureBox124
             // 
@@ -1594,6 +1691,7 @@ namespace PacmanProject
             this.pictureBox124.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox124.TabIndex = 132;
             this.pictureBox124.TabStop = false;
+            this.pictureBox124.Tag = "coin";
             // 
             // pictureBox125
             // 
@@ -1604,6 +1702,7 @@ namespace PacmanProject
             this.pictureBox125.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox125.TabIndex = 131;
             this.pictureBox125.TabStop = false;
+            this.pictureBox125.Tag = "coin";
             // 
             // pictureBox126
             // 
@@ -1614,6 +1713,7 @@ namespace PacmanProject
             this.pictureBox126.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox126.TabIndex = 136;
             this.pictureBox126.TabStop = false;
+            this.pictureBox126.Tag = "coin";
             // 
             // pictureBox127
             // 
@@ -1624,6 +1724,7 @@ namespace PacmanProject
             this.pictureBox127.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox127.TabIndex = 135;
             this.pictureBox127.TabStop = false;
+            this.pictureBox127.Tag = "coin";
             // 
             // pictureBox129
             // 
@@ -1634,6 +1735,7 @@ namespace PacmanProject
             this.pictureBox129.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox129.TabIndex = 133;
             this.pictureBox129.TabStop = false;
+            this.pictureBox129.Tag = "coin";
             // 
             // pictureBox130
             // 
@@ -1644,6 +1746,7 @@ namespace PacmanProject
             this.pictureBox130.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox130.TabIndex = 137;
             this.pictureBox130.TabStop = false;
+            this.pictureBox130.Tag = "coin";
             // 
             // pictureBox131
             // 
@@ -1654,6 +1757,7 @@ namespace PacmanProject
             this.pictureBox131.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox131.TabIndex = 138;
             this.pictureBox131.TabStop = false;
+            this.pictureBox131.Tag = "coin";
             // 
             // pictureBox132
             // 
@@ -1664,6 +1768,7 @@ namespace PacmanProject
             this.pictureBox132.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox132.TabIndex = 139;
             this.pictureBox132.TabStop = false;
+            this.pictureBox132.Tag = "coin";
             // 
             // pictureBox133
             // 
@@ -1674,6 +1779,7 @@ namespace PacmanProject
             this.pictureBox133.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox133.TabIndex = 140;
             this.pictureBox133.TabStop = false;
+            this.pictureBox133.Tag = "coin";
             // 
             // pictureBox134
             // 
@@ -1684,6 +1790,7 @@ namespace PacmanProject
             this.pictureBox134.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox134.TabIndex = 141;
             this.pictureBox134.TabStop = false;
+            this.pictureBox134.Tag = "coin";
             // 
             // pictureBox135
             // 
@@ -1694,6 +1801,8 @@ namespace PacmanProject
             this.pictureBox135.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox135.TabIndex = 142;
             this.pictureBox135.TabStop = false;
+            this.pictureBox135.Tag = "coin";
+            this.pictureBox135.Click += new System.EventHandler(this.pictureBox135_Click);
             // 
             // pictureBox136
             // 
@@ -1704,6 +1813,8 @@ namespace PacmanProject
             this.pictureBox136.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox136.TabIndex = 143;
             this.pictureBox136.TabStop = false;
+            this.pictureBox136.Tag = "coin";
+            this.pictureBox136.Click += new System.EventHandler(this.pictureBox136_Click);
             // 
             // pictureBox137
             // 
@@ -1714,6 +1825,8 @@ namespace PacmanProject
             this.pictureBox137.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox137.TabIndex = 144;
             this.pictureBox137.TabStop = false;
+            this.pictureBox137.Tag = "coin";
+            this.pictureBox137.Click += new System.EventHandler(this.pictureBox137_Click);
             // 
             // pictureBox138
             // 
@@ -1724,6 +1837,8 @@ namespace PacmanProject
             this.pictureBox138.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox138.TabIndex = 145;
             this.pictureBox138.TabStop = false;
+            this.pictureBox138.Tag = "coin";
+            this.pictureBox138.Click += new System.EventHandler(this.pictureBox138_Click);
             // 
             // pictureBox139
             // 
@@ -1734,6 +1849,8 @@ namespace PacmanProject
             this.pictureBox139.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox139.TabIndex = 146;
             this.pictureBox139.TabStop = false;
+            this.pictureBox139.Tag = "coin";
+            this.pictureBox139.Click += new System.EventHandler(this.pictureBox139_Click);
             // 
             // pictureBox140
             // 
@@ -1744,6 +1861,8 @@ namespace PacmanProject
             this.pictureBox140.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox140.TabIndex = 147;
             this.pictureBox140.TabStop = false;
+            this.pictureBox140.Tag = "coin";
+            this.pictureBox140.Click += new System.EventHandler(this.pictureBox140_Click);
             // 
             // pictureBox141
             // 
@@ -1754,6 +1873,8 @@ namespace PacmanProject
             this.pictureBox141.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox141.TabIndex = 149;
             this.pictureBox141.TabStop = false;
+            this.pictureBox141.Tag = "coin";
+            this.pictureBox141.Click += new System.EventHandler(this.pictureBox141_Click);
             // 
             // pictureBox142
             // 
@@ -1764,6 +1885,8 @@ namespace PacmanProject
             this.pictureBox142.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox142.TabIndex = 148;
             this.pictureBox142.TabStop = false;
+            this.pictureBox142.Tag = "coin";
+            this.pictureBox142.Click += new System.EventHandler(this.pictureBox142_Click);
             // 
             // pictureBox143
             // 
@@ -1774,6 +1897,8 @@ namespace PacmanProject
             this.pictureBox143.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox143.TabIndex = 152;
             this.pictureBox143.TabStop = false;
+            this.pictureBox143.Tag = "coin";
+            this.pictureBox143.Click += new System.EventHandler(this.pictureBox143_Click);
             // 
             // pictureBox144
             // 
@@ -1784,6 +1909,8 @@ namespace PacmanProject
             this.pictureBox144.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox144.TabIndex = 151;
             this.pictureBox144.TabStop = false;
+            this.pictureBox144.Tag = "coin";
+            this.pictureBox144.Click += new System.EventHandler(this.pictureBox144_Click);
             // 
             // pictureBox145
             // 
@@ -1794,6 +1921,8 @@ namespace PacmanProject
             this.pictureBox145.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox145.TabIndex = 150;
             this.pictureBox145.TabStop = false;
+            this.pictureBox145.Tag = "coin";
+            this.pictureBox145.Click += new System.EventHandler(this.pictureBox145_Click);
             // 
             // pictureBox146
             // 
@@ -1804,6 +1933,8 @@ namespace PacmanProject
             this.pictureBox146.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox146.TabIndex = 155;
             this.pictureBox146.TabStop = false;
+            this.pictureBox146.Tag = "coin";
+            this.pictureBox146.Click += new System.EventHandler(this.pictureBox146_Click);
             // 
             // pictureBox147
             // 
@@ -1814,6 +1945,8 @@ namespace PacmanProject
             this.pictureBox147.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox147.TabIndex = 154;
             this.pictureBox147.TabStop = false;
+            this.pictureBox147.Tag = "coin";
+            this.pictureBox147.Click += new System.EventHandler(this.pictureBox147_Click);
             // 
             // pictureBox148
             // 
@@ -1824,6 +1957,8 @@ namespace PacmanProject
             this.pictureBox148.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox148.TabIndex = 153;
             this.pictureBox148.TabStop = false;
+            this.pictureBox148.Tag = "coin";
+            this.pictureBox148.Click += new System.EventHandler(this.pictureBox148_Click);
             // 
             // pictureBox149
             // 
@@ -1834,6 +1969,7 @@ namespace PacmanProject
             this.pictureBox149.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox149.TabIndex = 156;
             this.pictureBox149.TabStop = false;
+            this.pictureBox149.Tag = "coin";
             // 
             // pictureBox150
             // 
@@ -1844,6 +1980,7 @@ namespace PacmanProject
             this.pictureBox150.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox150.TabIndex = 157;
             this.pictureBox150.TabStop = false;
+            this.pictureBox150.Tag = "coin";
             // 
             // pictureBox128
             // 
@@ -1854,6 +1991,7 @@ namespace PacmanProject
             this.pictureBox128.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox128.TabIndex = 159;
             this.pictureBox128.TabStop = false;
+            this.pictureBox128.Tag = "coin";
             // 
             // pictureBox151
             // 
@@ -1864,10 +2002,12 @@ namespace PacmanProject
             this.pictureBox151.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox151.TabIndex = 158;
             this.pictureBox151.TabStop = false;
+            this.pictureBox151.Tag = "coin";
             // 
             // gameTimer
             // 
             this.gameTimer.Interval = 20;
+            this.gameTimer.Tick += new System.EventHandler(this.mainGameTimer);
             // 
             // Form1
             // 
@@ -2006,7 +2146,7 @@ namespace PacmanProject
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.pictureBox17);
+            this.Controls.Add(this.pacman);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox14);
@@ -2026,10 +2166,13 @@ namespace PacmanProject
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtScore);
             this.Name = "Form1";
             this.Tag = "coin";
             this.Text = "Pacman";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -2049,7 +2192,7 @@ namespace PacmanProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pacman)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
@@ -2188,7 +2331,7 @@ namespace PacmanProject
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtScore;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -2208,7 +2351,7 @@ namespace PacmanProject
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pacman;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox20;
